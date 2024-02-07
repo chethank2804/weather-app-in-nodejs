@@ -12,7 +12,6 @@ jobs:
         
 
         steps:
-          
             - uses: actions/checkout@v4
             - name: Log in to Docker Hub
               run: |
@@ -21,10 +20,10 @@ jobs:
             - name: Build Docker image
               run: |
                docker image build -t reehanruhullah/dataphion_prac:weather .
-              user: root
+             
           
             - name: Push Docker image
               run: |
                  docker push reehanruhullah/dataphion_prac:weather
-              user: root
+             
           
