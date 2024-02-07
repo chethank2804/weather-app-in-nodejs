@@ -9,7 +9,7 @@ jobs:
         runs-on: 
           - self-hosted
           - ubuttt
-        container: docker:19.03.12
+        
 
         steps:
           
@@ -23,8 +23,8 @@ jobs:
                docker image build -t reehanruhullah/dataphion_prac:weather .
               user: root
           
-             - name: Push Docker image
-               run: |
+            - name: Push Docker image
+              run: |
                  docker push reehanruhullah/dataphion_prac:weather
-                 user: root
+              user: root
           
