@@ -1,29 +1,20 @@
-
-on: 
+on:
     push:
         branches: [master]
     
 
 jobs:
     build:
-        runs-on: 
-          - self-hosted
-          - ubuttt
+        runs-on: ubuntu-latest
         
-
         steps:
+            - run: node --version
+            - run: npm --version
             - uses: actions/checkout@v4
+            
+            
             - name: Log in to Docker Hub
               run: |
                 echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
-          
-            - name: Build Docker image
-              run: |
-               docker image build -t reehanruhullah/dataphion_prac:weather .
-             
-          
-            - name: Push Docker image
-              run: |
-                 docker push reehanruhullah/dataphion_prac:weather
-             
-          
+                docker image build -t reehanruhullah/dataphion_prac:tagname .
+                docker push reehanrulluah/dataphion_prac:tagname
