@@ -1,2 +1,2 @@
 [deploy]
-3.89.218.238 ansible_ssh_user=vm-2 ansible_ssh_pass= _work/weather-app-in-nodejs/weather-app-in-nodejs/demo.pem 
+3.89.218.238 ansible_ssh_user=vm-2 ansible_ssh_pass= ./demo1.pem
