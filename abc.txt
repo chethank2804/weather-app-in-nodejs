@@ -1,2 +1,2 @@
 [deploy]
-3.89.218.238 ansible_ssh_user= vm-2 ansible_ssh_pass= "./demo1.pem"
+18.205.157.25 ansible_ssh_user= ubuntu ansible_ssh_pass= server123    
