@@ -5,7 +5,7 @@ on:
 
 jobs:
     build:
-        runs-on: acc
+        runs-on: act
         
         steps:
             
