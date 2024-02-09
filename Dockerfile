@@ -14,6 +14,6 @@ RUN npm install -g npm@latest
 
 
 
+ENTRYPOINT [ "tail", "-f", "/dev/null" ]
 
-
-ENTRYPOINT [ "node", "app.js" ]
+#ENTRYPOINT [ "node", "app.js" ]
