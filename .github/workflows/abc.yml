@@ -5,7 +5,7 @@ on:
 
 jobs:
     build:
-        runs-on: act
+        runs-on: ck
         
         steps:
             
