@@ -5,7 +5,7 @@ on:
 
 jobs:
     build:
-        runs-on: ck     
+        runs-on: kumar    
         
         
         steps:
